@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Mem Slider</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <div class="slider">
+      <input type="radio" id="meme-1" name="meme" checked>
+      <input type="radio" id="meme-2" name="meme">
+      <input type="radio" id="meme-3" name="meme">
+      <input type="radio" id="meme-4" name="meme">
+      <input type="radio" id="meme-5" name="meme">
+      <input type="radio" id="meme-6" name="meme">
+      <div class="slides">
+        <div class="slide">
+          <img src="./mems/photo-1.jpg" alt="Meme 1">
+        </div>
+        <div class="slide">
+          <img src="./mems/photo-2.jpg" alt="Meme 2">
+        </div>
+        <div class="slide">
+          <img src="./mems/photo-3.jpg" alt="Meme 3">
+        </div>
+        <div class="slide">
+          <img src="./mems/photo-4.jpg" alt="Meme 4">
+        </div>
+        <div class="slide">
+          <img src="./mems/photo-5.jpg" alt="Meme 5">
+        </div>
+        <div class="slide">
+          <img src="./mems/photo-6.jpg" alt="Meme 6">
+        </div>
+      </div>
+      <div class="slider-footer">
+        <div class="meme-texts">
+          <p class="item">You should try it</p>
+          <p class="item">Trying to use pseudo selector in JS</p>
+          <p class="item">CSS vs. Backend developer</p>
+          <p class="item">Javascript drama</p>
+          <p class="item">Front matters more</p>
+          <p class="item">JS can be run inside IoT</p>
+        </div>
+        <div class="bullets-container">
+          <label for="meme-1" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+          <label for="meme-2" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+          <label for="meme-3" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+          <label for="meme-4" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+          <label for="meme-5" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+          <label for="meme-6" class="bullet-wrapper">
+            <span class="bullet" />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
