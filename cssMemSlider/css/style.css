@@ -42,7 +42,7 @@ input[type="radio"] {
 
 .slide {
   width: 100%;
-  transition: all 300ms ease-in-out;
+  transition: all 300ms;
 }
 
 .slide img {
@@ -80,16 +80,16 @@ input[type="radio"] {
 
   color: #008080;
 
-  transition: all 300ms ease-in-out;
+  transition: all 300ms;
 }
 
-.bullets-container {
+.bullets {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.bullet-wrapper {
+.bullet {
   width: 32px;
   height: 100%;
   display: flex;
@@ -97,65 +97,41 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.bullet {
+.dot {
   display: block;
   margin: 0 auto;
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background-color: #305656;
-  transition: all 300ms ease-in-out;
+  transition: all 300ms;
 }
 
-.bullet-wrapper:hover .bullet {
+.bullet:hover .dot {
   border: 2px solid #008080;
   background-color: #a2e2e2;
 }
 
-.bullet-wrapper:active .bullet {
-  transition: all 100ms ease-in-out;
+.bullet:active .dot {
+  transition: transform 100ms;
   transform: scale(1.2);
 }
 
-.meme-1:checked ~ .slider-footer > .bullets-container > .bullet-1 > .bullet,
-.meme-2:checked ~ .slider-footer > .bullets-container > .bullet-2 > .bullet,
-.meme-3:checked ~ .slider-footer > .bullets-container > .bullet-3 > .bullet,
-.meme-4:checked ~ .slider-footer > .bullets-container > .bullet-4 > .bullet,
-.meme-5:checked ~ .slider-footer > .bullets-container > .bullet-5 > .bullet,
-.meme-6:checked ~ .slider-footer > .bullets-container > .bullet-6 > .bullet {
+.meme-1:checked ~ .slider-footer > .bullets > .bullet-1 > .dot,
+.meme-2:checked ~ .slider-footer > .bullets > .bullet-2 > .dot,
+.meme-3:checked ~ .slider-footer > .bullets > .bullet-3 > .dot,
+.meme-4:checked ~ .slider-footer > .bullets > .bullet-4 > .dot,
+.meme-5:checked ~ .slider-footer > .bullets > .bullet-5 > .dot,
+.meme-6:checked ~ .slider-footer > .bullets > .bullet-6 > .dot {
   background-color: #008080;
 }
 
-.meme-1:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-1
-  > .bullet,
-.meme-2:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-2
-  > .bullet,
-.meme-3:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-3
-  > .bullet,
-.meme-4:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-4
-  > .bullet,
-.meme-5:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-5
-  > .bullet,
-.meme-6:checked:hover
-  ~ .slider-footer
-  > .bullets-container
-  > .bullet-6
-  > .bullet {
+.meme-1:checked:hover ~ .slider-footer > .bullets > .bullet-1 > .dot,
+.meme-2:checked:hover ~ .slider-footer > .bullets > .bullet-2 > .dot,
+.meme-3:checked:hover ~ .slider-footer > .bullets > .bullet-3 > .dot,
+.meme-4:checked:hover ~ .slider-footer > .bullets > .bullet-4 > .dot,
+.meme-5:checked:hover ~ .slider-footer > .bullets > .bullet-5 > .dot,
+.meme-6:checked:hover ~ .slider-footer > .bullets > .bullet-6 > .dot {
   border: 2px solid #008080;
   background-color: #a2e2e2;
 }
@@ -218,7 +194,7 @@ input[type="radio"] {
     gap: 10px;
   }
 
-  .bullets-container {
+  .bullets {
     align-self: center;
   }
 
